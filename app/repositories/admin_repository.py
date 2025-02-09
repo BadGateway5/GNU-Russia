@@ -6,5 +6,5 @@ class Admin(User):
         super().__init__()
 
     
-    def delete_user():
+    def delete_user(self):
         pass

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+</head>
+<body>
+    <h2>Вход</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.login.label }}<br>
+            {{ form.login(class_="form-control") }}
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(class_="form-control") }}
+        </p>
+        <p>{{ form.submit(class_="btn btn-primary") }}</p>
+    </form>
+</body>
+</html>
