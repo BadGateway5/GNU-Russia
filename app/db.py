@@ -1,22 +1,3 @@
-class User:
-    
-    def __init__(self):
-        pass
+from psycopg_pool import ConnectionPool
 
-
-    def create_user():
-        pass
-
-
-    def get_user():
-        pass
-
-
-class Admin(User):
-    
-    def __init__(self):
-        super().__init__()
-
-    
-    def delete_user():
-        pass
+pool = ConnectionPool(conninfo='dbname=test user=linus password=Habib2005.',min_size=4, max_size=10)
